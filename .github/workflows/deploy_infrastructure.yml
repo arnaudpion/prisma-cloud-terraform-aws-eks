@@ -48,7 +48,7 @@ jobs:
 
       - name: Run Security Check - Checkov / Prisma Cloud
         id: Prisma_Cloud
-        uses: bridgecrewio/checkov-action@819c40b715182bef1211331492e7a4c2d5cbdf2d # pin@master
+        uses: bridgecrewio/checkov-action@master # 819c40b715182bef1211331492e7a4c2d5cbdf2d # pin@master
         env:
           PRISMA_API_URL: ${{ github.event.inputs.PRISMA_API_URL }}
         with:
